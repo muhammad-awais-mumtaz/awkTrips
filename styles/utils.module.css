@@ -1,0 +1,40 @@
+.pad {
+  padding: 2rem;
+}
+.padSides {
+  padding: 0 2rem;
+}
+
+.padUpDown {
+  padding: 2rem 0;
+}
+
+.marg {
+  margin: 2rem;
+}
+
+.margSides {
+  margin: 0 2rem;
+}
+
+.margUpDown {
+  margin: 2rem 0;
+}
+
+.fontLightFilter {
+  filter: invert(91%) sepia(14%) saturate(1165%) hue-rotate(323deg)
+    brightness(100%) contrast(91%);
+}
+
+.fontDarkFilter {
+  filter: invert(38%) sepia(53%) saturate(330%) hue-rotate(338deg)
+    brightness(97%) contrast(88%);
+}
+
+.fontLight {
+  color: #d9ab82;
+}
+
+.fontDark {
+  color: #8c644d;
+}

@@ -1,0 +1,26 @@
+.offeringContainer {
+  background-image: url("https://mui.com/static/themes/onepirate/productCurvyLines.png");
+  background-position: center;
+  height: 40rem;
+  width: 100%;
+  text-align: center;
+  background-color: #f2cea2;
+}
+
+.offeringCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.offeringCards div {
+  width: 300px;
+  padding: 2rem;
+}
+
+@media (max-width: 940px) {
+  .offeringContainer {
+    height: fit-content;
+  }
+}

@@ -1,0 +1,21 @@
+.navBarContainer {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  z-index: 10;
+}
+.navBarContainer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLinksContainer {
+  list-style-type: none;
+  padding-top: 30px;
+  display: flex;
+}
+
+.navLinksContainer li {
+  padding-right: 10px;
+  font-weight: 600;
+}

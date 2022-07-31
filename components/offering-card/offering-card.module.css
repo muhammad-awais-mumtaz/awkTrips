@@ -1,0 +1,9 @@
+.cardContainer {
+  line-height: 1.5rem;
+  width: 300px;
+  padding: 2rem;
+}
+
+.cardContainer img {
+  padding-bottom: 10px;
+}

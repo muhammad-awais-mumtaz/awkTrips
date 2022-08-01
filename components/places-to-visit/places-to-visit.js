@@ -1,6 +1,7 @@
 import styles from "./places-to-visit.module.css";
 import utilStyles from "../../styles/utils.module.css";
-import Image from "next/image";
+import PlacesToVisitPhoto from "../places-to-visit-photo/places-to-visit-photo";
+import BasicModal from "../modal-mui/modal-mui";
 
 export default function PlacesToVisit() {
   const photoList = [
@@ -14,23 +15,15 @@ export default function PlacesToVisit() {
   ];
 
   return (
-    <>
-      <div className={`${styles.gallery} ${utilStyles.marg} ${utilStyles.pad}`}>
+    <div
+      className={`${styles.photoGalleryContainer} ${utilStyles.fontDark} ${utilStyles.margUpDown} ${utilStyles.padUpDown}`}
+    >
+      <h1>Places To Visit</h1>
+      <div className={`${styles.gallery} ${utilStyles.pad}`}>
         {photoList.map((photo) => (
-          <div
-            className={`${styles.pics} ${utilStyles.margUpDown}`}
-            key={photo.id}
-          >
-            <Image
-              src={photo.image}
-              alt={photo.altText}
-              width={500}
-              height={500}
-              layout="responsive"
-            />
-          </div>
+          <PlacesToVisitPhoto key={photo.id} photosToDisplay={photo} />
         ))}
       </div>
-    </>
+    </div>
   );
 }

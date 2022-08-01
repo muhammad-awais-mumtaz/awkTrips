@@ -1,12 +1,55 @@
 import styles from "./places-to-visit-photo.module.css";
+import utilStyles from "../../styles/utils.module.css";
+import { useState } from "react";
 import Image from "next/image";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 650,
+  borderRadius: "10px",
+  boxShadow: 24,
+};
 
 export default function PlacesToVisitPhoto(props) {
-  const { name, altText } = props.photoToDisplay;
+  const { image, altText } = props.photosToDisplay;
+
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
-    <div className={styles.pic}>
-      <Image src={name} alt={altText} layout="fill" />
-      <h3>{altText}</h3>
-    </div>
+    <>
+      <Button onClick={handleOpen}>
+        <div className={`${styles.pic} ${utilStyles.marg}`}>
+          <Image
+            src={image}
+            alt={altText}
+            height={300}
+            width={300}
+            layout="responsive"
+          />
+          <h3 className={utilStyles.fontDark}>{altText}</h3>
+        </div>
+      </Button>
+      <Modal open={open} onClose={handleClose}>
+        <Box sx={style}>
+          <Image
+            className={styles.modelPic}
+            src={image}
+            alt={altText}
+            height={500}
+            width={500}
+            layout="responsive"
+            objectFit="cover"
+          />
+        </Box>
+      </Modal>
+    </>
   );
 }

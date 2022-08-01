@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <div className={`${utilStyles.container} ${styles.navBarContainer}`}>
+    <div className={`${utilStyles.padSides} ${styles.navBarContainer}`}>
       <div>
         <Image
           className={utilStyles.fontLightFilter}

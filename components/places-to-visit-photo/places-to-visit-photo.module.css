@@ -1,4 +1,18 @@
 .pic {
-  padding: 2rem;
-  position: relative;
+  /* position: relative; */
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+.pic img {
+  object-fit: cover;
+}
+
+.pic h3 {
+  margin: 0.5rem;
+}
+
+.modelPic {
+  border-radius: 10px;
 }

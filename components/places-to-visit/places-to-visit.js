@@ -1,7 +1,6 @@
 import styles from "./places-to-visit.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import PlacesToVisitPhoto from "../places-to-visit-photo/places-to-visit-photo";
-import BasicModal from "../modal-mui/modal-mui";
 
 export default function PlacesToVisit() {
   const photoList = [

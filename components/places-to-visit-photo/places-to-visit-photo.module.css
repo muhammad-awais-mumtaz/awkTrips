@@ -7,12 +7,23 @@
 
 .pic img {
   object-fit: cover;
+  transition: transform 0.5s;
 }
 
-.pic h3 {
-  margin: 0.5rem;
+.pic img:hover {
+  transform: scale(0.9);
 }
 
 .modelPic {
   border-radius: 10px;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+@media (max-width: 940px) {
+  .modelBox {
+    width: 75vw;
+  }
 }

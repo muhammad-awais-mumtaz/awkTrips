@@ -1,0 +1,21 @@
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  text-align: center;
+}
+
+.content h1 {
+  margin-bottom: 1.5rem;
+}
+
+.video iframe {
+  border-radius: 10px;
+}
+
+@media (max-width: 940px) {
+  .videoContainer {
+    height: fit-content;
+  }
+}

@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Wallpaper from "../components/wallpaper/wallpaper";
 import Offering from "../components/offering/offering";
 import PlacesToVisit from "../components/places-to-visit/places-to-visit";
+import WeAreGoing from "../components/We-are-going/we-are-going";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
         <main>
           <Wallpaper />
+          <WeAreGoing />
           <Offering />
           <PlacesToVisit />
         </main>

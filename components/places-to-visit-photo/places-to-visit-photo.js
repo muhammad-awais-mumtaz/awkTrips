@@ -25,20 +25,20 @@ export default function PlacesToVisitPhoto(props) {
 
   return (
     <>
-      <Button onClick={handleOpen}>
-        <div className={`${styles.pic} ${utilStyles.marg}`}>
+      <Button className={styles.btn} onClick={handleOpen}>
+        <div className={`${styles.pic}`}>
           <Image
+            className={styles.modelPic}
             src={image}
             alt={altText}
             height={300}
             width={300}
             layout="responsive"
           />
-          <h3 className={utilStyles.fontDark}>{altText}</h3>
         </div>
       </Button>
       <Modal open={open} onClose={handleClose}>
-        <Box sx={style}>
+        <Box sx={style} className={styles.modelBox}>
           <Image
             className={styles.modelPic}
             src={image}

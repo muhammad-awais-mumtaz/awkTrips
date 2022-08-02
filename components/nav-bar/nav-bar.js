@@ -14,6 +14,7 @@ export default function NavBar() {
           width={100}
         />
         <div className={`${styles.navLinksContainer} ${utilStyles.fontLight}`}>
+          <li>Trip</li>
           <li>About</li>
           <li>Contact</li>
         </div>

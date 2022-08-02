@@ -1,9 +1,15 @@
 .cardContainer {
-  line-height: 1.5rem;
   width: 300px;
+  height: 300px;
   padding: 2rem;
 }
 
-.cardContainer img {
-  padding-bottom: 10px;
+.cardContainer h3 {
+  line-height: 2.5rem;
+}
+
+.cardContainer p {
+  line-height: 1.5rem;
+  text-align: justify;
+  padding: 0 10px;
 }

@@ -3,9 +3,12 @@ import utilStyles from "../../styles/utils.module.css";
 
 export default function WeAreGoing() {
   return (
-    <div className={`${styles.videoContainer} ${utilStyles.fontDark}`}>
+    <div
+      className={`${styles.videoContainer} ${utilStyles.fontDark}`}
+      id="trip"
+    >
       <div className={styles.content}>
-        <h1>We are to this beautiful peace of haven</h1>
+        <h1>We are going feel to this beautiful peace of haven</h1>
         <div className={styles.video}>
           <iframe
             width="560"

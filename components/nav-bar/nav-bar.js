@@ -1,6 +1,7 @@
 import styles from "./nav-bar.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NavBar() {
   return (
@@ -14,9 +15,15 @@ export default function NavBar() {
           width={100}
         />
         <div className={`${styles.navLinksContainer} ${utilStyles.fontLight}`}>
-          <li>Trip</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link href={"#trip"}>Trip</Link>
+          </li>
+          <li>
+            <Link href={"#"}>About</Link>
+          </li>
+          <li>
+            <Link href={"#"}>Contact</Link>
+          </li>
         </div>
       </div>
     </div>

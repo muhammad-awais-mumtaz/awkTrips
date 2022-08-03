@@ -5,6 +5,7 @@ import Wallpaper from "../components/wallpaper/wallpaper";
 import Offering from "../components/offering/offering";
 import PlacesToVisit from "../components/places-to-visit/places-to-visit";
 import WeAreGoing from "../components/We-are-going/we-are-going";
+import CallToAction from "../components/call-to-action/call-to-action";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <WeAreGoing />
           <Offering />
           <PlacesToVisit />
+          <CallToAction />
         </main>
       </div>
     </Layout>

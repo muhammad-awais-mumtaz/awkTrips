@@ -22,8 +22,8 @@
 }
 
 .fontLightFilter {
-  filter: invert(91%) sepia(14%) saturate(1165%) hue-rotate(323deg)
-    brightness(100%) contrast(91%);
+  filter: invert(85%) sepia(19%) saturate(607%) hue-rotate(344deg)
+    brightness(100%) contrast(90%);
 }
 
 .fontDarkFilter {
@@ -32,7 +32,7 @@
 }
 
 .fontLight {
-  color: #d9ab82;
+  color: #f2cea2;
 }
 
 .fontDark {

@@ -12,8 +12,11 @@ export default function Home() {
     <Layout home={true}>
       <div className={styles.container}>
         <Head>
-          <title>Create Next App</title>
-          <meta name="description" content="" />
+          <title>AwkTrips | See haven</title>
+          <meta
+            name="description"
+            content="trips in pakistan and its northern areas"
+          />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 

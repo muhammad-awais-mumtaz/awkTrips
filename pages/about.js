@@ -2,6 +2,7 @@ import styles from "../styles/about.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Layout from "../components/layout/layout";
 import Partner from "../components/partner/partner";
+import Head from "next/head";
 
 export default function About() {
   const partners = [
@@ -28,6 +29,9 @@ export default function About() {
   ];
   return (
     <Layout home={false}>
+      <Head>
+        <title>about</title>
+      </Head>
       <div className={`${styles.aboutContainer} ${utilStyles.fontDark}`}>
         <h1>Hello Everyone!</h1>
         {partners.map((partner) => {

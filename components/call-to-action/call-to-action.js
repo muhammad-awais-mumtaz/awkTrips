@@ -7,7 +7,13 @@ export default function CallToAction() {
       <div className={styles.form}>
         <h1>Be updated</h1>
         <input type="email" placeholder="E-mail" />
-        <span>Send Me offers</span>
+        <span
+          onClick={() =>
+            alert("We are working ⚒👷‍♂️ on that feature to available for you.")
+          }
+        >
+          Send Me offers
+        </span>
       </div>
       <div className={styles.pic}></div>
     </div>

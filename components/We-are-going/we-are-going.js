@@ -1,5 +1,6 @@
 import styles from "./we-are-going.module.css";
 import utilStyles from "../../styles/utils.module.css";
+import BookMe from "../book-me/book-me";
 
 export default function WeAreGoing() {
   return (
@@ -19,6 +20,7 @@ export default function WeAreGoing() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           ></iframe>
         </div>
+        <BookMe />
       </div>
     </div>
   );

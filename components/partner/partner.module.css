@@ -1,0 +1,25 @@
+.partnerContainer {
+  width: 50vw;
+  margin: 2rem;
+  /* padding: 2rem; */
+}
+
+.partnerContainer h2 {
+  color: #4f638c;
+}
+
+.socialMediaLink {
+  color: #4f638c;
+  /* font-size: 2rem; */
+  margin-top: 1rem;
+  /* margin-left: 1rem; */
+  transition: transform 0.5s;
+}
+
+.socialMediaLink:hover {
+  transform: scale(1.2);
+}
+
+.image {
+  border-radius: 15px;
+}

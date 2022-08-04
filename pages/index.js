@@ -9,7 +9,7 @@ import CallToAction from "../components/call-to-action/call-to-action";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout home={true}>
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>

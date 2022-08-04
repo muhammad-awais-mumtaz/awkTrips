@@ -3,26 +3,31 @@ import utilStyles from "../../styles/utils.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function NavBar() {
+export default function NavBar({ home }) {
   return (
     <div className={`${utilStyles.padSides} ${styles.navBarContainer}`}>
       <div>
-        <Image
-          className={utilStyles.fontLightFilter}
-          src="/AwkTripsLogo.svg"
-          alt="Website logo"
-          height={70}
-          width={100}
-        />
-        <div className={`${styles.navLinksContainer} ${utilStyles.fontLight}`}>
+        <Link href={"/"}>
+          <Image
+            className={`${
+              home ? utilStyles.fontLightFilter : utilStyles.fontDarkFilter
+            } ${styles.homeLink}`}
+            src="/AwkTripsLogo.svg"
+            alt="Website logo"
+            height={70}
+            width={100}
+          />
+        </Link>
+        <div
+          className={`${styles.navLinksContainer} ${
+            home ? utilStyles.fontLight : utilStyles.fontDark
+          }`}
+        >
           <li>
-            <Link href={"#trip"}>Trip</Link>
+            <Link href={"/#trip"}>Trip</Link>
           </li>
           <li>
-            <Link href={"#"}>About</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Contact</Link>
+            <Link href={"/about"}>About</Link>
           </li>
         </div>
       </div>

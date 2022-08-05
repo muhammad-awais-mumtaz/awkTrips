@@ -10,3 +10,9 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+
+@media (max-width: 670px) {
+  .footer {
+    width: 670px;
+  }
+}

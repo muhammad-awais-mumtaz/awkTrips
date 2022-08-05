@@ -71,3 +71,12 @@
   left: -30px;
   top: -30px;
 }
+
+@media (max-width: 670px) {
+  .callToActionContainer {
+    width: 670px;
+  }
+  .pic {
+    display: none;
+  }
+}

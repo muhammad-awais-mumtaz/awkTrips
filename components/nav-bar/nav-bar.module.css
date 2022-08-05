@@ -23,3 +23,9 @@
 .homeLink {
   cursor: pointer;
 }
+
+@media (max-width: 670px) {
+  .navBarContainer {
+    width: 670px;
+  }
+}

@@ -1,5 +1,4 @@
 .pic {
-  /* position: relative; */
   height: 300px;
   width: 300px;
   text-align: center;
@@ -24,6 +23,6 @@
 
 @media (max-width: 940px) {
   .modelBox {
-    width: 75vw;
+    width: 35rem;
   }
 }

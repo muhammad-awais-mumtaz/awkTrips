@@ -4,6 +4,7 @@
   align-items: center;
   height: 40rem;
   text-align: center;
+  padding: 3.5rem;
 }
 
 .content h1 {
@@ -17,5 +18,11 @@
 @media (max-width: 940px) {
   .videoContainer {
     height: fit-content;
+  }
+}
+
+@media (max-width: 670px) {
+  .videoContainer {
+    width: 670px;
   }
 }

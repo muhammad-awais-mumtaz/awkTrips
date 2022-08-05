@@ -1,7 +1,6 @@
 .partnerContainer {
-  width: 50vw;
+  width: 55vw;
   margin: 2rem;
-  /* padding: 2rem; */
 }
 
 .partnerContainer h2 {
@@ -10,9 +9,7 @@
 
 .socialMediaLink {
   color: #4f638c;
-  /* font-size: 2rem; */
   margin-top: 1rem;
-  /* margin-left: 1rem; */
   transition: transform 0.5s;
 }
 

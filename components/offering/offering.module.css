@@ -24,3 +24,14 @@
     height: fit-content;
   }
 }
+
+@media (max-width: 670px) {
+  .offeringContainer {
+    width: 670px;
+  }
+
+  .offeringCards div {
+    width: 350px;
+    font-size: 1.5rem;
+  }
+}

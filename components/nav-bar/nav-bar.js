@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function NavBar({ home }) {
   return (
     <div className={`${utilStyles.padSides} ${styles.navBarContainer}`}>
-      <div>
+      <div className={styles.homeLinkContainer}>
         <Link href={"/"}>
           <Image
             className={`${
@@ -14,8 +14,8 @@ export default function NavBar({ home }) {
             } ${styles.homeLink}`}
             src="/AwkTripsLogo.svg"
             alt="Website logo"
-            height={70}
-            width={100}
+            height={80}
+            width={110}
           />
         </Link>
         <div

@@ -20,3 +20,10 @@
 .image {
   border-radius: 15px;
 }
+
+@media (max-width: 670px) {
+  .partnerContainer {
+    width: 85vw;
+    margin: 2rem;
+  }
+}

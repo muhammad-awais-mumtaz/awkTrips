@@ -8,15 +8,17 @@ export default function NavBar({ home }) {
     <div className={`${utilStyles.padSides} ${styles.navBarContainer}`}>
       <div className={styles.homeLinkContainer}>
         <Link href={"/"}>
-          <Image
-            className={`${
-              home ? utilStyles.fontLightFilter : utilStyles.fontDarkFilter
-            } ${styles.homeLink}`}
-            src="/AwkTripsLogo.svg"
-            alt="Website logo"
-            height={80}
-            width={110}
-          />
+          <a>
+            <Image
+              className={`${
+                home ? utilStyles.fontLightFilter : utilStyles.fontDarkFilter
+              } ${styles.homeLink}`}
+              src="/AwkTripsLogo.svg"
+              alt="Website logo"
+              height={80}
+              width={110}
+            />
+          </a>
         </Link>
         <div
           className={`${styles.navLinksContainer} ${
@@ -24,10 +26,14 @@ export default function NavBar({ home }) {
           }`}
         >
           <li>
-            <Link href={"/#trip"}>Trip</Link>
+            <Link href={"/#trip"}>
+              <a>Trip</a>
+            </Link>
           </li>
           <li>
-            <Link href={"/about"}>About</Link>
+            <Link href={"/about"}>
+              <a>About</a>
+            </Link>
           </li>
         </div>
       </div>

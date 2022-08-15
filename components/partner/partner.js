@@ -15,6 +15,7 @@ export default function Partner({ partner }) {
         width={300}
         layout="responsive"
         objectFit="cover"
+        priority
       />
       <h1>{partner.name}</h1>
       <h2>{partner.designation}</h2>

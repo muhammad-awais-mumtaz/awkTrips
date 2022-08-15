@@ -31,6 +31,10 @@ export default function About() {
     <Layout home={false}>
       <Head>
         <title>about</title>
+        <meta
+          name="description"
+          content="Muhammad Awais Mumtaz and Muhammad Abuzar are two who are running this business of traveling."
+        />
       </Head>
       <div className={`${styles.aboutContainer} ${utilStyles.fontDark}`}>
         <h1>Hello Everyone!</h1>
